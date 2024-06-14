@@ -1,112 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" >
-	<meta charset="UTF-8">
-
-	<title>HTML Meta Tags Generator</title>
-	<meta name="keywords" content="HTML, Meta, Keywords, SEO, SEM, Meta generator"/>
-	<meta name="description" content="HTML Meta Tags Generator for SEO / Facebook and Social Media Share. "/>
-
-	<meta property="og:title" content="HTML Meta Tags Generator"/>
-	<meta property="og:description" content="HTML Meta Tags Generator for SEO / Facebook and Social Media Share. "/>
-	<meta property="og:site_name" content="HTML Meta Tags Generator"/>
-	<meta property="og:type" content="website"/>
-	<meta property="og:url" content="URL HERE"/>
-	<link rel="canonical" href="URL HERE" />
-
-	<meta property="og:image" content="images/icon.png"/>
-	<meta property="og:image:width" content="256"/>
-	<meta property="og:image:height" content="256"/>
-
-	<link rel="shortcut icon" href="images/icon.png"/>
-	<link rel="icon" type="image/png" href="images/icon.png" sizes="256x256"/>
-	<link rel="apple-touch-icon" sizes="images/icon.png" href="images/icon.png"/>
-
-	<link rel="shortcut icon" href="images/icon.png"/>
-	<link rel="icon" type="image/png" href="images/icon.png" sizes="256x256"/>
-	<link rel="apple-touch-icon" sizes="images/icon.png" href="images/icon.png"/>
-
-	<link rel="stylesheet" href="css/style.css" type="text/css"/>
-
-
-</head>
-<body>
-	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1607825709510874&autoLogAppEvents=1';
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));
-	</script>
-
-	<nav>
-		
-
-	</nav>
-
-	<form action="index.html#generate">
-		<main>
-		<header>
-			<h1>HTML Meta Tags Generator</h1>
-		</header>
-			<section class="embed">
-				<section>
-					<h3>Website (url)</h3>
-					<input type="text" placeholder="https://my.site/path" name="url" onchange="readUrl(this.value)">
-				</section>
-				<section>
-					<h3>Title</h3>
-					<input type="text" placeholder="Page title" name="title" onchange="autofill(this.form)" required>
-				</section>
-				<section>
-					<h3>Description</h3>
-					<input type="text" placeholder="Page description" name="description" onchange="autofill(this.form)">
-				</section>
-				<section>
-					<h3>Keywords</h3>
-					<input type="text" placeholder="Keyword1, Next keyword2, Keyword3" name="keywords">
-				</section>
-
-				<section>
-					<h3>Logo</h3>
-					<input type="text" placeholder="http://my.site/path/to/logo.png" name="icon">
-				</section>
-				
-				<section>
-					<h3>Web site image</h3>
-					<input type="text" placeholder="http://my.site/path/to/image.png" name="image" onchange="changeOgImage(this)">
-					<section>
-						<h4>Image width (pixels)</h4>
-						<input type="text" placeholder="256" name="image_width">
-						<h4>Image height (pixels)</h4>
-						<input type="text" placeholder="256" name="image_height">
-					</section>
-				</section>
-				
-			</section>
-			<a id="generate"></a>
-			<section class="action">
-				<h1>
-					<button >Generate</button>
-				</h1>
-			</section>
-		
-		<footer>
-			<section>
-				<pre id="code">
-
-				</pre>
-			</section>
-		</footer>
-	
-	</main>
-	</form>
-	<script src="js/script.js" type="text/javascript" ></script>
-	
-
-</body>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>HTML Meta Tags Generator</title>
+    <meta name="keywords" content="HTML, Meta, Keywords, SEO, SEM, Meta generator" />
+    <meta name="description" content="HTML Meta Tags Generator for SEO / Facebook and Social Media Share. " />
+    <meta property="og:title" content="HTML Meta Tags Generator" />
+    <meta property="og:description" content="HTML Meta Tags Generator for SEO / Facebook and Social Media Share. " />
+    <meta property="og:site_name" content="HTML Meta Tags Generator" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="URL HERE" />
+    <link rel="canonical" href="URL HERE" />
+    <meta property="og:image" content="images/icon.png" />
+    <meta property="og:image:width" content="256" />
+    <meta property="og:image:height" content="256" />
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="icon" type="image/png" href="images/icon.png" sizes="256x256" />
+    <link rel="apple-touch-icon" sizes="images/icon.png" href="images/icon.png" />
+    <link rel="shortcut icon" href="images/icon.png" />
+    <link rel="icon" type="image/png" href="images/icon.png" sizes="256x256" />
+    <link rel="apple-touch-icon" sizes="images/icon.png" href="images/icon.png" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+  </head>
+  <body>
+    <div id="fb-root"></div>
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = 'https://connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.12&appId=1607825709510874&autoLogAppEvents=1';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+    <nav></nav>
+    <form action="index.html#generate">
+      <main>
+        <header>
+          <h1>HTML Meta Tags Generator</h1>
+        </header>
+        <section class="embed">
+          <section>
+            <h3>Website (url)</h3>
+            <input type="text" placeholder="https://my.site/path" name="url" onchange="readUrl(this.value)">
+          </section>
+          <section>
+            <h3>Title</h3>
+            <input type="text" placeholder="Page title" name="title" onchange="autofill(this.form)" required>
+          </section>
+          <section>
+            <h3>Description</h3>
+            <input type="text" placeholder="Page description" name="description" onchange="autofill(this.form)">
+          </section>
+          <section>
+            <h3>Keywords</h3>
+            <input type="text" placeholder="Keyword1, Next keyword2, Keyword3" name="keywords">
+          </section>
+          <section>
+            <h3>Logo</h3>
+            <input type="text" placeholder="http://my.site/path/to/logo.png" name="icon">
+          </section>
+          <section>
+            <h3>Web site image</h3>
+            <input type="text" placeholder="http://my.site/path/to/image.png" name="image" onchange="changeOgImage(this)">
+            <section>
+              <h4>Image width (pixels)</h4>
+              <input type="text" placeholder="256" name="image_width">
+              <h4>Image height (pixels)</h4>
+              <input type="text" placeholder="256" name="image_height">
+            </section>
+          </section>
+        </section>
+        <a id="generate"></a>
+        <section class="action">
+          <h1>
+            <button>Generate</button>
+          </h1>
+        </section>
+        <footer>
+          <section>
+            <pre id="code"></pre>
+          </section>
+        </footer>
+      </main>
+    </form>
+    <script src="js/script.js" type="text/javascript"></script>
+  </body>
 </html>
